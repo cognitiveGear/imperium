@@ -1,19 +1,30 @@
 ## List of Resources
 
-
 ### Player
 - Credits
 Units of value and exchange
+(Accumulates)
 - Science
 Understanding of reality
+(Accumulates, carrying capacity is total ScienceLimit)
+- ScienceLimit
+Institutional capacity to retain existing scientific understanding
+(Pop and Hab upkeep only, does not accumulate)
 - Freight
 Interstellar Logistic Capacity
+(Does not accumulate)
 - Stability
 Mandate to rule
+(Does not accumulate)
 - Favor
 Diplomatic capital with minor powers
+(Accumulates)
+- Bureaucracy
+Institutional sophistication
+(Does not accumulate)
 
 ### Physical
+(All Accumulate)
 - Food
 Organic sustenance
 - Metal
@@ -37,7 +48,17 @@ Mirrored matter, on contact converts to pure energy
 - Singularities
 Micro-blackholes that convert mass to energy
 
+### Colonial
+(All Do Not Accumulate)
+- Joy
+Pop Satisfaction
+- Boost
+Lifting capacity from surface to orbit.
+- Loyalty
+Willingness of this colony to submit to your rule
+
 ### Local
+(All Do Not Accumulate)
 - Energy
 Ability to do work
 - Production
@@ -47,15 +68,8 @@ Information processing power
 - Habitat
 Pop Residential Space
 
-### Colonial
-- Joy
-Pop Satisfaction
-- Boost
-Lifting capacity from surface to orbit.
-- Loyalty
-Willingness of this colony to submit to your rule
-
 ### Combat
+(All Do Not Accumulate)
 - HP
 Ability to endure damange
 - Damage

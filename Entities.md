@@ -3,10 +3,14 @@
 Players
 - targetOf Stock
 - targetOf Modifier
+- has AI
 
-Locations
+Location
 
-Stars
+Located
+- targets Location
+
+Star
 - isA Location
 
 Hyperlanes
@@ -14,57 +18,81 @@ Hyperlanes
 - targets Star (start)
 - targets Star (end)
 
-Planets
+Planet
 - isA Location
 - childOf Star
 
 Deposits
-- IsA Location
-- childOf Planet
+- isA Location
+- childOf Planet 
+- has DepositType
+
+Designed
+- has Designer (Player)
 
 Species
-- targets Designer (Player)
+- isA Designed
 - targetOf RaceTraits
-
-Pops
-- targets Owner (Player)
-- targets Location (Location)
-- targets Species
+- targetOf Build
 - targetOf Upkeep
 - targetOf Modifier
+- has Name
+- has Description
+- has Sprite
+
+ShipDesign
+- isA Designed
 - targetOf Build
+- targetOf Upkeep
+- targetOf Stock
+- has Sprite
+
+Owned
+- has Owner (Player)
+
+Pops
+- isA Owned
+- isA Located
+- targets Species
 - has Gender
 - has Job
+- has AI
 
 Habs
-- targets Owner (Player)
-- targets Location (Location)
+- isA Owned
+- isA Located
 - targetOf Build
 - targetOf Upkeep
 - has HabType
 
 Ships
+- isA Owned
 - isA Location
-- targets Owner (Player)
-- targets ParentLocation (Location)
-- targetOf Build
-- targetOf Upkeep
-- targetOf Stock
+- isA Located
+- targets ShipDesign
+- has Position
+- has Velocity
+- has HP
+- has AI
 
 ## Types
 
-Resource (enum)
-Tech (enum)
-HabType (enum) -- Actual structure type
-HabClass (enum) -- Where hab is (Surface, Orbit, Ship)
-Job (enum)
-Traits (enum)
-Gender (enum)
+- Resource (enum)
+- Tech (enum)
+- HabType (enum)
+Actual structure type, associate res build/upkeep
+- HabClass (enum)
+Where hab can be located (Surface, Orbit, Ship)
+- Job (enum)
+- Traits (enum)
+Associated with res build/upkeep
+- Gender (enum)
+- DepositType (enum)
 
 ## Linking Entities
 
-Build (Res, quantity (float))
-Stock (Res, quantity (float))
-Upkeep (Res, quantity (float))
-Modifier (Res, modifier (float))
-RaceTraits (Trait)
+- Build (Res, quantity (float))
+- Stock (Res, quantity (float))
+- Upkeep (Res, quantity (float))
+- Modifier (Res, modifier (float))
+- RaceTraits (Trait)

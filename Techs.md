@@ -1,5 +1,18 @@
 ## List of Technologies
 
+Limit of # of technologies that a player can researched in a game (ignoring repeatables)
+
+## Tech Research Principles
+
+- Pop/Job/Habs can generate Science
+- Pop/Job/Habs can generate ScienceLimit, which is carrying capacity for the total amount of science
+- Accumulated Science is allocated to technologies to research them.
+- If Science goes above the ScienceLimit, its forced down.
+- If Science falls below what is required to sustain total techs researched, player will start losing technologies randomly.
+- Buildings that require that technology will start breaking down and eventually turn into rubble
+- Pops retain traits created by that TechLimit but they can't be engineered out (or in)
+- Repeatable technologies tend to increased ScienceLimit
+
 ### Drives
 - Primitive Chemical Drive
 - Optimal Chemical Drive
@@ -24,6 +37,7 @@
 ### Energy
 - Nuclear Fission
 - Silicon Photovoltaics
+- Pressurized Fission Reactors
 - Thin Film Photovoltaics
 - Fluidic Fission Power
 - Tandem Photovoltaics
@@ -31,6 +45,8 @@
 - Nuclear Fusion
 - Linear Fusion Power
 - Resonant Fusion Power
+- AntiMatter Generation
+(AntiMatter can only act as store of energy)
 - Singularity Power
 
 ### Computation
@@ -46,6 +62,7 @@
 - Isomorphic Crystals
 - Digital Self-Awareness
 - Artifical General Intelligence
+(Repeatable)
 
 ### Physics
 - Quantum Physics
@@ -56,8 +73,9 @@
 - Quantized Relativity
 - Applied Gravitonics
 - Entropic Field Analysis
-- Unified Field Theory
 - Singularity Fabrication
+- Unified Field Theory
+(Repeatable)
 
 ### Engineering
 - Primitive Automation
@@ -71,29 +89,43 @@
 - Mass Nanofabrication
 - Programmable Matter
 - Nanorobotics
+- Nano-Augmentation
 - Nano-Industrialization
+- Utility Fog
+- NanoAscension
+(Repeatable)
 
-### Neurology
+### Cybernetics
 - Brain Machine Interface
 - Light Bridge
 - Cyberization
 - Consumer Augmentation
 - Deep Neural Integration
 - Uploaded Consciousness
+- Digital Immortality
+- Consumer Virtualization
 - Connectome Optimization
 - Thought Acceleration
-- Universal Cognition Interface
+- Universal Cognitive Interface
 - Consciousness Scaling
 - Digital Godhood
+(Repeatable)
 
 ### Biology
 - Genetics
 - Retroviral Engineering
 - Consumer Resequencing
 - Biomechanical Engineering
-- Clinical Immortality
 - Protein Optimization
 - Nanomedicine
+- Clinical Immortality
+- Artificial Life
+- Nano-Organic Synthesis
+- Synthetic Evolution
+- Self-Aware Biology
+- Universal Genetics
+- BioSupremacy
+(Repeatable)
 
 ### Colonization
 - Primitive Spacesuits
@@ -101,18 +133,35 @@
 - Modular Habitats
 - Skinsuits
 - Geoforming
+- Designer Organisms
+- Artifical Ecology
+- Eucumenopolois
 - Aeroforming
+- Productive Ecosystem
 - Hydroforming
+- Industrial Forest
+- Planet Brain
 - Terraforming
 - Gaiaforming
+(Repeatable)
 
 ### Space Construction
 - Von Braun Wheel
 - Stanford Torus
 - Space Energy Transmission
 - ONeill Cylinder
+- Solar Shades & Mirrors
 - Orbital Farms
+- Orbital Solar Array
 - Megastructure Engineering
+- Megatelescope Array
+- Space Elevator
+- Active Support
+- Lofstrom Loop
+- Orbital Ring
+- Dyson Swarm
+- Stellaser
+- Ringworld
 
 ### Economics
 - Industrial Economics
@@ -134,7 +183,7 @@
 - Directed Identity
 - Computable Ethics
 - Instrumentality
-- Eudaimonia
+- Eudiamonia
 
 ### Military (Army)
 - Drop Pods
@@ -148,3 +197,23 @@
 - Fundamentals of Space War
 - Fleet Doctrine
 - Interstellar Navy
+
+### Weapons 
+- Chemical Kinetic
+- Chemical Laser
+- Chemical Missile
+- Galvanic Rifle
+- Electron Laser
+- Atomic Missile
+- Railgun
+- Fission Laser
+- Fission-Drive Missile
+- Plasma Kinetics
+- Fusion Laser
+- Fusion-Drive Missile
+- Relativistic Kinetic
+- Gamma Laser (Antimatter)
+- Antimatter Missile
+- Relativistic Blackhole Gun
+- Blackhole Laser
+- Singularity-Drive Missile
